@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #company_logo{
+            max-height:50px;
+            max-width:50px;
+        }
+        .main-header {
+            background:grey;
+        }
+        .wrapper {
+            height:1000px;
+        }
+        .section-main-content{
+            height:100%;
+            width:100%;
+        }
+        
+        #img-table-imgs {
+            max-height:250px;
+            max-width:250px;
+        }
+        .sidebar{
+            float:left;
+            height:988px;
+            width:200px;
+            background:grey;
+        }
+        
+        .sidebar-navigation{
+            margin-left:500px;
+        }
+        
+        .sidebar-links{
+            list-style:none;
+        }
+
+        .sidebar-links a{
+            text-decoration:none;
+        }
+        
+        
+        .middle-content{
+            width:560px;
+        }
+        
+        .footer {
+            background:grey;
+        }
+    </style>
+<head>
+    <title>Sou Lee - IS-183 Midterm Home</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header box-shadow">
+            <img class="logo" id="company_logo" src="./img/logo.png">
+        </header>
+        <section class="section-main-content">
+            <aside class="sidebar sidebar-navigation"><b>Navigation</b>
+                <ul class="sidebar-links">
+                    <li><a href="./about.html" target="">About Us</a></li>
+                    <li><a href="./contact.html" target="">Contact Us</a></li>
+                    <li><a href="./product.html" target="">Products</a></li>
+                    <li><a href="./login.html">Log Out</a></li>
+                </ul>
+            </aside>
+            <aside class="sidebar middle-content"><h1>Middle Content</h1>
+                <div class="middle-content-gallery">
+                    <p>This is our gallery</p>
+                    <table id="img-table">
+                        <tr><img id="img-table-imgs" src="./img/placeholder.png"></tr>
+                        <tr><img id="img-table-imgs" src="./img/placeholder.png"></tr>
+                        <tr><img id="img-table-imgs" src="./img/placeholder.png"></tr>
+                        <tr><img id="img-table-imgs" src="./img/placeholder.png"></tr>
+                        <tr><img id="img-table-imgs" src="./img/placeholder.png"></tr>
+                        <tr><img id="img-table-imgs" src="./img/placeholder.png"></tr>
+                    </table>
+                </div>
+            </aside>
+            <aside class="sidebar sidebar-recent"><b>Recent Products</b>
+                <div>
+                    <p>product 1</p>
+                    <p>product 1</p>
+                    <p>product 1</p>
+                </div>
+            </aside>
+        </section>
+    </div>
+    <footer class="footer box-shadow">
+        <p class="copyright">
+            (c) Created by Sou Lee
+        </p>
+    </footer>
+</body>
+</html>

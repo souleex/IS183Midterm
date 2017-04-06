@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .main-header {
+            background:grey;
+        }
+        .wrapper {
+            height:1000px;
+        }
+        .section-main-content{
+            height:100%;
+            width:100%;
+        }
+        .sidebar{
+            background:transparent;
+            float:left;
+            height:988px;
+            width:200px;
+        }
+        
+        .middle-content{
+            width:560px;
+            background:grey;
+            margin-left:500px;
+        }
+        
+        .footer {
+            background:grey;
+        }
+    </style>
+<head>
+    <title>Sou Lee - IS-183 Midterm Contact</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header box-shadow">
+            <img class="logo" id="company_logo" src="../img/logo.gif">
+        </header>
+        <section class="section-main-content">
+            <aside class="sidebar sidebar-navigation"></aside>
+            <aside class="sidebar middle-content"><h1>About Us</h1>
+                    <div class="contact-form-space" id="contact-form-input">
+                        <h1>Contact Form</h1>
+                        <label for="yourMessage">Your Message</label>
+                        <p><textarea rows="8" cols="80" class="yourMessage-input type="text" id="message"></textarea></p>
+                        <label for="firstName">First Name:</label>
+                        <input class="submit-firstName type="text" id="firstName"></input>
+                        <label for="lastName">Last Name:</label>
+                        <input class="submit-lastName type="text" id="lastName"></input>
+                        <label for="yourEmail">Your Email:</label>
+                        <input class="submit-email type="text" id="email"></input>
+                        <button onclick="send_response(3000)" id="btn-submit" class="submit-button">Submit</button>
+                    </div>
+            </aside>
+            <aside class="sidebar sidebar-recent"></aside>
+        </section>
+    </div>
+    <footer class="footer box-shadow">
+        <p class="copyright">
+            (c) Created by Sou Lee
+        </p>
+    </footer>
+</body>
+</html>

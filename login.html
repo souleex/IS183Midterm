@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .login-section{
+        height:500px;
+        width: 500px;
+        background:grey;
+        position:absolute;
+        top:20%;
+        left:33%;
+    }
+    
+    .login-form{
+        position:relative;
+        top:50%;
+        left:15%;
+    }
+    
+    #header-login{
+        text-align:center;
+    }
+</style>
+<head>
+    <title>Sou Lee - IS183 Midterm Login</title>
+</head>
+<body>
+    <div class="login-section">
+        <h1 class="header" id="header-login">Login</h1>
+        <form class="login-form">
+            <input class="login-user-name-input" id="login-user-name-input" placeholder="Your User Name Here"></input>
+            <input class="login-user-password-input" id="login-user-password-input" placeholder="Your User Password Here"></input>
+            <button id="btn-sign-in">Sign In</button>
+        </form>
+    </div>
+</body>
+<script>
+    jQuery("#btn-sign-in").click(function{
+        alert('asdad');
+    });
+</script>
+</html>
