@@ -1,0 +1,114 @@
+.main-header {
+    background:grey;
+}
+.wrapper {
+    height:1000px;
+}
+.section-main-content{
+    height:100%;
+    width:100%;
+}
+
+.sidebar-navigation{
+    margin-left:500px;
+}
+
+.middle-content{
+    width:560px;
+    background:grey;
+}
+
+#company_logo{
+    max-height:50px;
+    max-width:50px;
+}
+.main-header {
+    background:grey;
+}
+.wrapper {
+    height:1000px;
+}
+.section-main-content{
+    height:100%;
+    width:100%;
+}
+
+#img-table-imgs {
+    max-height:250px;
+    max-width:250px;
+}
+
+.sidebar-navigation{
+    margin-left:500px;
+}
+
+.sidebar-links{
+    list-style:none;
+}
+
+.sidebar-links a{
+    text-decoration:none;
+}
+
+.middle-content{
+    width:560px;
+}
+
+#company_logo{
+    max-height:50px;
+    max-width:50px;
+}
+.main-header {
+    background:grey;
+}
+.wrapper {
+    height:1000px;
+}
+
+.sidebar{
+    background:grey;
+    float:left;
+    height:950px;
+    width:200px;
+}
+
+.login-section{
+    height:500px;
+    width: 500px;
+    background:grey;
+    position:absolute;
+    top:20%;
+    left:33%;
+}
+
+.login-form{
+    position:relative;
+    top:50%;
+    left:15%;
+}
+
+#header-login{
+    text-align:center;
+}
+
+.wrapper {
+    height:1000px;
+}
+.section-main-content{
+    height:100%;
+    width:100%;
+}
+
+.middle-content{
+    width:500px;
+}
+
+#middle-content-img{
+    max-height:250px;
+    max-width:250px;
+}
+
+
+.footer {
+    background:grey;
+}

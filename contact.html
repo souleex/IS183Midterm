@@ -1,40 +1,16 @@
 <!DOCTYPE html>
 <html>
     <style>
-        .main-header {
-            background:grey;
-        }
-        .wrapper {
-            height:1000px;
-        }
-        .section-main-content{
-            height:100%;
-            width:100%;
-        }
-        .sidebar{
-            background:transparent;
-            float:left;
-            height:988px;
-            width:200px;
-        }
-        
-        .middle-content{
-            width:560px;
-            background:grey;
-            margin-left:500px;
-        }
-        
-        .footer {
-            background:grey;
-        }
+
     </style>
 <head>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Sou Lee - IS-183 Midterm Contact</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="main-header box-shadow">
-            <img class="logo" id="company_logo" src="../img/logo.gif">
+            <img class="logo" id="company_logo" src="./img/logo.png">
         </header>
         <section class="section-main-content">
             <aside class="sidebar sidebar-navigation"></aside>
@@ -49,7 +25,7 @@
                         <input class="submit-lastName type="text" id="lastName"></input>
                         <label for="yourEmail">Your Email:</label>
                         <input class="submit-email type="text" id="email"></input>
-                        <button onclick="send_response(3000)" id="btn-submit" class="submit-button">Submit</button>
+                        <a href="./home.html"><button onclick="send_response(3000)" id="btn-submit" class="submit-button">Submit</button></a>
                     </div>
             </aside>
             <aside class="sidebar sidebar-recent"></aside>

@@ -1,66 +1,42 @@
 <!DOCTYPE html>
 <html>
     <style>
-        .main-header {
-            background:grey;
-        }
-        .wrapper {
-            height:1000px;
-        }
-        .section-main-content{
-            height:100%;
-            width:100%;
-        }
-        .sidebar{
-            background:grey;
-            float:left;
-            height:988px;
-            width:200px;
-        }
-        
-        .sidebar-navigation{
-            margin-left:500px;
-        }
-        
-        .middle-content{
-            width:560px;
-            background:grey;
-        }
-        
-        .footer {
-            background:grey;
-        }
+
     </style>
 <head>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Sou Lee - IS-183 Midterm Product</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="main-header box-shadow">
-            <img class="logo" id="company_logo" src="../img/logo.gif">
+            <h1>Sou Lee</h1>
         </header>
         <section class="section-main-content">
             <aside class="sidebar sidebar-navigation"><b>Navigation</b>
                 <ul class="sidebar-links">
-                    <li><a href="#"></a></li>
-                    <li><a href="./login.html" target="">Logout</a></li>
+                    <li><a href="./home.html" target="">Home</a></li>
+                    <li><a href="./about.html" target="">About Us</a></li>
+                    <li><a href="./contact.html" target="">Contact Us</a></li>
+                    <li><a href="./login.html">Log Out</a></li>
                 </ul>
             </aside>
             <aside class="sidebar middle-content"><h1>Middle Content</h1>
                 <div class="middle-content-gallery">
                     <p>These are our prodcuts</p>
-                        <table class="image-table">
+                        <table class="courses-table">
                             <tr>
-                                <td><h3>Chocolate Chip Cookies</h1><a href="../product_grid_page/product_grid.html#id-chocolate-chip-cookies"><img src="../img/gallery/1.jpg" alt="abstract_image_001"></a><br>It tastes like Chocolate Chips</td>
-                                <td><h3>Chocolate Chip &amp; Coconut Filling Cookie</h1><a href="../product_grid_page/product_grid.html#id-chocolate-chip-coconut-cookies"><img src="../img/gallery/2.jpg" alt="abstract_image_001"></a><br>It tastes like Chocolate Chips and Coconuts</td>
-                                <td><h3>Double Chocolate Cookie</h1><a href="../product_grid_page/product_grid.html#id-double-chocolate-chip-cookies"><img src="../img/gallery/3.jpg" alt="abstract_image_001"></a><br>It tastes like diabetes</td>
-                                <td><h3>Chocolate Chip &amp; Oreo Filling Cookie</h1><a href="../product_grid_page/product_grid.html#id-chocolate-chip-oreo-cookies"><img src="../img/gallery/4.jpg" alt="abstract_image_001"></a><br>The best of both worlds</td>
+                                <th>Product ID</th>
+                                <th>Location</th>
+                                <th>Price</th>
+                                <th>Availability</th>
                             </tr>
                             <tr>
-                                <td><h3>M&amp;M Cookie</h1><a href="../product_grid_page/product_grid.html#id-MM-cookies"><img src="../img/gallery/5.jpg" alt="abstract_image_001"></a><br>Don't like chocolate chips? Have some M&amp;Ms then</td>
-                                <td><h3>Jelly Reed Cookie</h1><a href="../product_grid_page/product_grid.html#id-jelly-reed-cookies"><img src="../img/gallery/6.jpg" alt="abstract_image_001"></a><br>It tastes like Christmas</td>
-                                <td><h3>Fortune Cookie</h1><a href="../product_grid_page/product_grid.html#id-fortune-cookies"><img src="../img/gallery/7.jpg" alt="abstract_image_001"></a><br>The future never tasted so good</td>
-                                <td><h3>Tofee Pretzel Cookie</h1><a href="../product_grid_page/product_grid.html#id-tofee-pretzel-cookies"><img src="../img/gallery/8.jpg" alt="abstract_image_001"></a><br>You never knew you wanted a pretzel cookie until now</td>
+                                <td>#0001</td>
+                                <td>12345 Fresno St</td>
+                                <td>$34.00</td>
+                                <td>Available</td>
+                                <td><button id="select-product">Select</button></td>
                             </tr>
                         </table>
                 </div>

@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html>
-<style>
-    .login-section{
-        height:500px;
-        width: 500px;
-        background:grey;
-        position:absolute;
-        top:20%;
-        left:33%;
-    }
-    
-    .login-form{
-        position:relative;
-        top:50%;
-        left:15%;
-    }
-    
-    #header-login{
-        text-align:center;
-    }
-</style>
 <head>
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <title>Sou Lee - IS183 Midterm Login</title>
 </head>
 <body>
     <div class="login-section">
         <h1 class="header" id="header-login">Login</h1>
-        <form class="login-form">
+        <form class="login-form" id="login-section">
             <input class="login-user-name-input" id="login-user-name-input" placeholder="Your User Name Here"></input>
             <input class="login-user-password-input" id="login-user-password-input" placeholder="Your User Password Here"></input>
-            <button id="btn-sign-in">Sign In</button>
+            <button id="btn-sign-in" onclick="login(4000)">Sign In</button>
         </form>
     </div>
 </body>
 <script>
-    jQuery("#btn-sign-in").click(function{
-        alert('asdad');
-    });
+            function login(myDuration)
+        {
+            var username = document.getElementById('login-user-name-input').value.toLowerCase();
+            var password = document.getElementById('login-user-password-input').value;
+            var myNotification = document.getElementById("error-message");
+            //check to see if the element "error-message" exists, and create it if it does not exist 
+            if (myNotification == null)
+            {
+                myNotification = document.createElement("div");
+            }
+            //dyanmically create it's attributes
+            myNotification.setAttribute("id", "error-message");
+            //myNotification.setAttribute("style","position:absolute;top:425px;background-color:grey;width:200px;border-radius:7px;");
+            
+            //check to see if user name and password are correct upon button press
+            //display appropriate message depending on condition
+            if (username!='sou' || password != '12345')
+            {
+                myNotification.innerHTML = 'Wrong login information!';
+                //removes the node after a set duration
+                setTimeout(function() {myNotification.parentNode.removeChild(myNotification);}, myDuration);
+            }
+            else
+            {
+                myNotification.innerHTML = 'Taking you to the "about" page...';
+                setTimeout(function() {myNotification.parentNode.removeChild(myNotification);}, myDuration);
+               /// setTimeout(window.location.href = "./about/about.html", 2000);
+                //after a set duration, proceed to page redirection
+                setTimeout(() => {window.location.href = "./home.html"}, myDuration);
+                
+            }
+            
+
+            document.getElementById("login-section").appendChild(myNotification);
+        }
 </script>
 </html>
