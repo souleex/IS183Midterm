@@ -8,21 +8,26 @@
 <body>
     <div class="login-section">
         <h1 class="header" id="header-login">Login</h1>
-        <form class="login-form" id="login-section">
-            <input class="login-user-name-input" id="login-user-name-input" placeholder="Your User Name Here"></input>
-            <input class="login-user-password-input" id="login-user-password-input" placeholder="Your User Password Here"></input>
-            <button id="btn-sign-in" onclick="login(4000)">Sign In</button>
-        </form>
+        <section>
+            <article>
+                <form class="login-form" id="login-section">
+                    <input class="login-user-name-input" id="username" placeholder="Your User Name Here"></input>
+                    <input class="login-user-password-input" id="password" placeholder="Your User Password Here"></input>
+                    <a href="./home.html>"></a><button onclick="login(4000)" id="btn-sign-in" >Sign In</button></a>
+                </form>
+            </article>
+        </section>
     </div>
 </body>
 <script>
-            function login(myDuration)
+        function login(myDuration)
         {
-            var username = document.getElementById('login-user-name-input').value.toLowerCase();
-            var password = document.getElementById('login-user-password-input').value;
+            var username = document.getElementById('username').value.toLowerCase();
+            var password = document.getElementById('password').value;
             var myNotification = document.getElementById("error-message");
+            //alert( myDuration );
             //check to see if the element "error-message" exists, and create it if it does not exist 
-            if (myNotification == null)
+           if (myNotification == null)
             {
                 myNotification = document.createElement("div");
             }
@@ -32,20 +37,11 @@
             
             //check to see if user name and password are correct upon button press
             //display appropriate message depending on condition
-            if (username!='sou' || password != '12345')
+            if (username!='sou' || password != '123')
             {
                 myNotification.innerHTML = 'Wrong login information!';
                 //removes the node after a set duration
                 setTimeout(function() {myNotification.parentNode.removeChild(myNotification);}, myDuration);
-            }
-            else
-            {
-                myNotification.innerHTML = 'Taking you to the "about" page...';
-                setTimeout(function() {myNotification.parentNode.removeChild(myNotification);}, myDuration);
-               /// setTimeout(window.location.href = "./about/about.html", 2000);
-                //after a set duration, proceed to page redirection
-                setTimeout(() => {window.location.href = "./home.html"}, myDuration);
-                
             }
             
 
